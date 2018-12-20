@@ -72,4 +72,4 @@ Unfortunately, our best submission for the competition organized by the EPFL was
 
 ## Acknowledgments
 
-The entire project used some utlities functions provided during the coursethat can be found on https://github.com/epfml/ML_course
+The entire project used some utlities functions provided during the course that can be found on https://github.com/epfml/ML_course
