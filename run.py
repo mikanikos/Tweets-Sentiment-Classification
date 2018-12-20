@@ -9,8 +9,9 @@ TRAIN_POS = 'data/train_pos_full.txt'
 TRAIN_NEG = 'data/train_neg_full.txt'
 TEST_DATA = 'data/test_data.txt'
 
+MODEL = "lstm_200.h5"
 VOCAB = 'tools/vocab.pkl'
-PREDICTION_PATH = "best_submission.csv"
+PREDICTION_PATH = "best_submission_200.csv"
 
 with open(VOCAB, 'rb') as f:
     vocab = pickle.load(f)
@@ -33,7 +34,7 @@ test_data = sequence.pad_sequences(test_data, maxlen=max_length)
 print("Model loading...")
 
 # Loading model from hdf5 file
-model = load_model("best_model.h5")
+model = load_model(MODEL)
 
 print("Generating predictions...")
 
