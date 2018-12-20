@@ -19,7 +19,7 @@ The project is organized in several files in order to guarantee modularity and h
  - `cleaner.py` contains classical utlities that were used to clean and preprocess text data (for example, removing punctuation and spaces, filtering stopwords, lemmatization etc.). 
  - `helpers.py` has a set of functions that are used across the whole project for different goals, like aggregating data or generating tokens from text.
  - `cross_validation.py` contains some of the functions that were used to cross validate our models for local testing and tuning of the hyper-parameters in order to get the best model.
- - `best_model.h5` is the pre-trained model saved that produced the best reproducible result in terms of accuracy. 
+ - `lstm_200.h5` is the pre-trained model saved that produced the best reproducible result in terms of accuracy. 
  - `Data_Exploration.ipynb` is a jupyter notebook that shows some initial and preliminar analysis of the data. 
  - `Models-Trainer.ipynb` is the notebook we used to train models offered by the Scikit-Learn library. In particular, we focused on the following classifiers: Logistic Regression, Random Forest, Support Vector Machine and Naive Bayes.  
  - `CNN-Trainer.ipynb` is the notebook created for testing our Neural Networks with Convolutional layers by using TensorFlow and Keras.
