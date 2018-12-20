@@ -15,17 +15,17 @@ The data is composed of 2500000 train tweets and 10000 test tweets. The file we 
 
 The project is organized in several files in order to guarantee modularity and have a clear structure: 
 
- - `run.py` is a simple script to generate our best submission by using the pre-trained model.
- - `cleaner.py` contains classical utlities that were used to clean and preprocess text data (for example, removing, punctuation, spaces stopwords, lemmatization etc.). 
- - `helpers.py` has a set of functions that are used across the whole project for different goals, like splitting data or generating tokens from text.
+ - `run.py` is a simple script to generate our best submission by using a pre-trained model.
+ - `cleaner.py` contains classical utlities that were used to clean and preprocess text data (for example, removing punctuation and spaces, filtering stopwords, lemmatization etc.). 
+ - `helpers.py` has a set of functions that are used across the whole project for different goals, like aggregating data or generating tokens from text.
  - `cross_validation.py` contains some of the functions that were used to cross validate our models for local testing and tuning of the hyper-parameters in order to get the best model.
  - `best_model.h5` is the pre-trained model saved that produced the best reproducible result in terms of accuracy. 
  - `Data_Exploration.ipynb` is a jupyter notebook that shows some initial and preliminar analysis of the data. 
  - `Models-Trainer.ipynb` is the notebook we used to train models offered by the Scikit-Learn library. In particular, we focused on the following classifiers: Logistic Regression, Random Forest, Support Vector Machine and Naive Bayes.  
- - `CNN-Trainer.ipynb` is the notebook created for testing our Convolutional Neural Networks with TensorFlow and Keras.
- - `RNN-Trainer.ipynb` is the notebook created for testing our Recurrent Neural Networks (LSTM) with TensorFlow and Keras.
- - `scripts` contains some files that can generate the vocabulary, the coocurrence matrix and the word embeddings that were used especially for Scikit-learn models.
- - `tools` has already some of the files generated with utilities in the script folder such as the vocabulary of all the words that appear in the training set and the corresponding embeddings.
+ - `CNN-Trainer.ipynb` is the notebook created for testing our Neural Networks with Convolutional layers by using TensorFlow and Keras.
+ - `RNN-Trainer.ipynb` is the notebook created for testing our Neural Networks with LSTM by using TensorFlow and Keras.
+ - `scripts` contains some files that can generate a vocabulary of the training set words, the corresponding coocurrence matrix and the word embeddings that were used for Scikit-learn models.
+ - `tools` has already some of the files generated with the utilities in the script folder such as the vocabulary and the embeddings.
  
 
 ## Getting Started
@@ -62,7 +62,7 @@ You will see some output on the screen. Once "Done" appears, you will be able to
 
 ## Notes
 
-Unfortunately, our best submission for the competition organized by the EPFL was higher than the one we provided here. In particular, we got 0.864 of accuracy but we can't consistenly reproduce the result in all the machines. One possible cause is related to the fact we used a Google Cloud Virtual Machine to train our model that has different settings and packages versions respect to our configurations. Another issue to consider is that several users have trouble to reproduce exactly the same results after saving the model with Keras. This seems to be a common issue on the forums and we are not the only ones that experienced this with different models.  
+Unfortunately, our best submission for the competition organized by the EPFL was higher than the one we provide here. In particular, we got 0.864 of accuracy but we can't consistenly reproduce the result in all the machines. One possible cause is related to the fact we used a Google Cloud Virtual Machine to train our models and we had to deal with different settings and packages versions respect to our configurations. Another issue to consider is that several users have trouble to reproduce exactly the same results after saving the model with Keras. This seems to be a common issue on the forums and we are not the only ones that experienced this with different models.
 
 ## Authors 
 
